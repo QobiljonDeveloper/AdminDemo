@@ -9,12 +9,10 @@ export const forgotPasswordSchema = z.object({
     email: z.string().email('Email noto\'g\'ri formatda'),
 });
 
-// For pure OTP verification step (no password yet)
 export const otpOnlySchema = z.object({
     otp: z.string().length(4, 'OTP 4 xonali son bo\'lishi kerak'),
 });
 
-// For the final Reset Password (Email + OTP + Pass)
 export const resetPasswordSchema = z.object({
     email: z.string().email('Email missing'),
     otp: z.string().length(4, 'OTP missing'),
