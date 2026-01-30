@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { mockContact } from '@/data/mockData';
 import { Button } from '@/components/ui/button';
-import { Plus, Pencil, Trash2, Search, Mail, Eye, EyeOff } from 'lucide-react';
+import { Plus, Pencil, Trash2, Search, Mail, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
     Table,
