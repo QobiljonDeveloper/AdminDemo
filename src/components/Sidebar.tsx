@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Newspaper, Image, Briefcase, HelpCircle, Phone, LayoutDashboard, LogOut, UserPlus } from 'lucide-react';
+import { Newspaper, Image, Briefcase, HelpCircle, Phone, LayoutDashboard, LogOut, UserPlus, Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import { useAuthStore } from '@/features/auth/authStore';
@@ -14,6 +14,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     const navItems = [
         { label: 'Dashboard', icon: LayoutDashboard, href: '/' },
+        { label: 'Hero', icon: Layers, href: '/hero' },
         { label: 'News', icon: Newspaper, href: '/news' },
         { label: 'Gallery', icon: Image, href: '/gallery' },
         { label: 'Opportunities', icon: Briefcase, href: '/opportunities' },

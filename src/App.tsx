@@ -22,6 +22,8 @@ import { ContactList } from '@/features/contact/ContactList';
 import { ContactForm } from '@/features/contact/ContactForm';
 import { DashboardPage } from '@/features/dashboard/DashboardPage';
 import { CreateAdminPage } from '@/features/admin/CreateAdminPage';
+import { HeroList } from '@/features/hero/HeroList';
+import { HeroForm } from '@/features/hero/HeroForm';
 import { Toaster } from '@/components/ui/toaster';
 
 
@@ -74,6 +76,11 @@ function App() {
           <Route path="news" element={<NewsList />} />
           <Route path="news/new" element={<NewsForm />} />
           <Route path="news/:id" element={<NewsForm />} />
+
+          {/* Hero Routes */}
+          <Route path="hero" element={<HeroList />} />
+          <Route path="hero/new" element={<HeroForm />} />
+          <Route path="hero/:id" element={<HeroForm />} />
 
           {/* Gallery Routes */}
           <Route path="gallery" element={<GalleryList />} />

@@ -245,10 +245,42 @@ export const mockContact = [
     }
 ];
 
+// Mock Hero Data
+export const mockHeroes = [
+    {
+        _id: 'hero-001',
+        title: { uz: "O'zbekiston kelajagi uchun yangi imkoniyatlar", ru: 'Новые возможности для будущего Узбекистана', en: 'New opportunities for the future of Uzbekistan' },
+        image: 'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=800',
+        buttonLink: 'https://renessans.uz',
+        order: 1,
+        isActive: true,
+        createdAt: '2026-01-28T10:00:00Z'
+    },
+    {
+        _id: 'hero-002',
+        title: { uz: 'Zamonaviy texnologiyalar va innovatsiyalar', ru: 'Современные технологии и инновации', en: 'Modern technologies and innovations' },
+        image: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?w=800',
+        buttonLink: null,
+        order: 2,
+        isActive: true,
+        createdAt: '2026-01-25T14:00:00Z'
+    },
+    {
+        _id: 'hero-003',
+        title: { uz: "Ta'lim va rivojlanish dasturlari", ru: 'Программы образования и развития', en: 'Education and development programs' },
+        image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800',
+        buttonLink: 'https://renessans.uz/programs',
+        order: 3,
+        isActive: false,
+        createdAt: '2026-01-20T09:00:00Z'
+    }
+];
+
 // Mock Dashboard Stats
 export const mockDashboardStats = {
     news: 127,
     gallery: 89,
+    heroes: 3,
     opportunities: 34,
     faq: 56,
     messages: 243,
